@@ -1,0 +1,14 @@
+# include<stdio.h>
+
+int main()
+{
+ long int n,i,prod;
+printf("enter a number");
+scanf("%ld",&n);
+for(i=1;i<=10;i++)
+{
+    prod=i*n;
+    printf("%ld*%ld=%ld\n",i,n,prod);
+}
+return 0;
+}
