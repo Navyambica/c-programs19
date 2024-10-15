@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() 
+{
+   int batch[50];
+   int i,n,sum=0;
+   float avg;
+   printf("enter the number of students");
+   scanf("%d",&n);
+       for(i=0;i<n;i++)
+       {
+           printf("enter the student marks");
+           scanf("%d",&batch[i]);
+           sum=sum+batch[i];
+           avg=sum/n;
+       }
+           printf("the sum of marks of the students are %d\n",sum);
+            printf("the average mark is%f",avg);
+       
+   }
