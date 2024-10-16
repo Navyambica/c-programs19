@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    long int arr1[2][2] = {{1, 2}, {6, 5}};
+    long int arr2[2][2] = {{1, 2}, {5, 4}};
+    long int array3[2][2]; 
+    long int sum = 0; 
+    float avg;
+    int n = 2 * 2; 
+    for (int row = 0; row < 2; row++) {
+        for (int col = 0; col < 2; col++) {
+            array3[row][col] = arr1[row][col] + arr2[row][col];
+            sum += array3[row][col]; 
+            printf("%ld ", array3[row][col]); 
+        }
+        printf("\n"); 
+    }
+
+    
+    avg = (float)sum / n; 
+
+    printf("Average: %f\n", avg); 
+
+    return 0;
+}
