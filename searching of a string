@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char i,a,string[45];
+    {
+        printf("enter your name");
+        fgets(string,sizeof(string),stdin);
+       printf("which character do you want");
+        scanf("%s",&a);
+       if (strchr(string, a) != NULL) 
+        {
+            printf("it is present");
+        }
+        else
+        {
+            printf("it is not present");
+        }
+    
+}
+}
